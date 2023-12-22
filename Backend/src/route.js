@@ -15,3 +15,5 @@ router.get('/test',testController);
 router.post('/signup',signupController);
 router.post('/login',loginController);
 router.get('/student',authentication,getAllStudentsController);
+
+module.exports=router;

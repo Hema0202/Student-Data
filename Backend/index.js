@@ -11,6 +11,6 @@ app.use(express.json());
 app.use('/',router);
 
 app.listen(3000,function(err){
-    if(err) console.group(err.message);
-    else console.groupEnd('server started on port',3000);
+    if(err) console.log(err.message);
+    else console.log('server started on port',3000);
 })
