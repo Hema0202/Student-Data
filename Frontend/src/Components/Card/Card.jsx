@@ -16,7 +16,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import Person3Icon from "@mui/icons-material/Person3";
 import "./Card.css";
 
-export default function card() {
+export default function card({obj}) {
   return (
     <div className="login-page">
       <div className="card">
