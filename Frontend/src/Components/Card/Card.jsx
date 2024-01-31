@@ -1,15 +1,15 @@
-let obj = {
-  _id: "657fe7d74e3ce23ff0f64373",
-  name: "Rahul",
-  age: 23,
-  password: "rahul@123",
-  email: "dkvjldsvdlkvlkdrahul123@gmail.com",
-  qualification: "graduate",
-  gender: "male",
-  createdAt: "2023-12-18T06:33:59.623Z",
-  updatedAt: "2023-12-18T06:33:59.623Z",
-  __v: 0,
-};
+// let obj = {
+//   _id: "657fe7d74e3ce23ff0f64373",
+//   name: "Rahul",
+//   age: 23,
+//   password: "rahul@123",
+//   email: "dkvjldsvdlkvlkdrahul123@gmail.com",
+//   qualification: "graduate",
+//   gender: "male",
+//   createdAt: "2023-12-18T06:33:59.623Z",
+//   updatedAt: "2023-12-18T06:33:59.623Z",
+//   __v: 0,
+// };
 
 import React from "react";
 import PersonIcon from "@mui/icons-material/Person";
@@ -18,7 +18,6 @@ import "./Card.css";
 
 export default function card({obj}) {
   return (
-    <div className="login-page">
       <div className="card">
         <div className="card-contains">
         {obj?.gender == "male" ? (
@@ -53,6 +52,5 @@ export default function card({obj}) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
