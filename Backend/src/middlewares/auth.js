@@ -7,13 +7,13 @@ function authentication(req,res,next){
     let token = req.headers['x-api-key'];
 
     //if token not available
-    if(!token) return res.send({
+    if(!token) return res.status(401).send({
         status :false,
         message:'You are not logged in!'
     })
 
-    jwt.verify(token, 'signatur',(err, decodedToken)=>{
-        if(err) return res.send({
+    jwt.verify(token, 'signature',(err, decodedToken)=>{
+        if(err) return res.status(401).send({
             status:false,
             message:'Invalid token'
         })
@@ -22,7 +22,7 @@ function authentication(req,res,next){
     })
   
     } catch (error) {
-        return res.send({
+        return res.status(500).send({
             status: false,
             message:error.message
         })
